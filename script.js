@@ -19,7 +19,7 @@ let currentLayer = null;
 
 // ** Data Loading **
 // Fetch the GeoJSON data
-fetch('data.geojson')
+fetch('abu_dhabi_amenities.geojson')
     .then(response => response.json())
     .then(data => {
         allAmenitiesData = data;
@@ -133,4 +133,5 @@ searchInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         filterAndDisplayFeatures(searchInput.value);
     }
+
 });
