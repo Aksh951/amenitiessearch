@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Abu Dhabi Amenity Search Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/SJP3e+eeoxQ7B057qM="
+        crossorigin=""/>
+    
+    <style>
+        /* Simple styling for the map and controls */
+        body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        #map { height: 80vh; width: 100%; }
+        #controls { padding: 10px; background-color: #f8f8f8; border-bottom: 1px solid #ddd; }
+        #search-input { padding: 8px; width: 300px; border: 1px solid #ccc; border-radius: 4px; }
+        #search-button { padding: 8px 15px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; margin-left: 5px; }
+        #search-button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <div id="controls">
+        <h1>Public Amenity Search</h1>
+        <p>Try: "Show parks", "Find hospitals", or "Parks near the Corniche" (optional filter).</p>
+        <input type="text" id="search-input" placeholder='e.g., "Show parks"' />
+        <button id="search-button">Search</button>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-2wL5p9p9P5tK4TqA5N2zO2x2W3Lg2F7n5s3K5F4q6w4="
+        crossorigin=""></script>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
